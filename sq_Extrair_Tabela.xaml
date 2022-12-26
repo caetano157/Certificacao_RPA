@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1355,2363" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1355,2196" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
       <x:String>System.Activities</x:String>
@@ -100,61 +100,50 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="672,2298" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="672,2131" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="630,219" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="473,140" sap2010:WorkflowViewState.IdRef="Sequence_15">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Americanas - tudo, a toda hora, em qualquer lugar :)" sap:VirtualizedContainerService.HintSize="431,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Version="V2">
-            <uix:NApplicationCard.Body>
-              <ActivityAction x:TypeArguments="x:Object">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="400,507" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="sd:DataTable" Name="dt_Extracao" />
-                  </Sequence.Variables>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Campo de busca" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Text="eletronicos" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.americanas.com.br/" DesignTimeRectangle="541, 209, 575, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='search__*' aaname='' /&gt;" Guid="19c8a564-3f98-48f6-8117-413c6ee5871a" ImageBase64="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" InformativeScreenshot="18ce961e3b76563cecf6d4d9120e2373.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Americanas - tudo, a toda hora, em qualquer lugar :)' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
-                    </uix:NTypeInto.Target>
-                  </uix:NTypeInto>
-                  <uix:NClick ClickType="Single" DisplayName="Click - Procura" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.americanas.com.br/" DesignTimeRectangle="1116, 218, 21, 21" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-labelledby='searchIcon searchDesc' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='searchIcon searchDesc' tag='svg' type='' class='search__*' aaname='' /&gt;" Guid="e5317716-a0e9-41e9-a167-22038fe2d9a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVEhLxZQ9TgMxEEZzA7gB3ADEAQg9SLRQQZMaxAHIAUCCkg4aaJHgAOEASLR0VNRIVOxfBn/GnrXXO7YRq/CkVbSbsZ89M/aIFsD/S+qLW6oOp1RuTehrtEHF+r5+ry/viD4+TVSaXsn85VVPiImlp1jdoWb2bEbECST19UM72dImVdMrau5nekL84r1Y2eYYvKfwJNiBHVzunsgpUd+rozOOhTyGJynW9lpBBixaHkdrxBIUWQ9QKcouqoqzqYuljSXVwWkyuA+7uHI8MV9CWIIgBKfy2wUNoTOAlAmwRAdCktmWLnaslGaW2KL/diduR0r8vSbmXGGREiyxBcRJzu4uhc0AFinBEq8dVf/ngF0jHm0/f3s3X0NaiYI7BaLj8+iOWJCxKE8C3OsCqcON2zz9dByKXN88hpenal/8JxFIADoMKfAm6j7m8rQ1iYl6JRqVKuxKH1JHiElRZK4BapkQyZIusY5LiPIlKSKi4STAEenzZhhWAozIvZWHl/SwAAnRN5WR5My9hBGdAAAAAElFTkSuQmCC" InformativeScreenshot="440e43bebd538064e4f8a52f549371f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Americanas - tudo, a toda hora, em qualquer lugar :)' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                </Sequence>
-              </ActivityAction>
-            </uix:NApplicationCard.Body>
-            <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVDhPjVNLS1VRGL1pEUUDB0H2I6LrzSyLkkLzD4RUdruBgVQQ9B74iCA1AnuMCnvRoJFPcFbqMCsnKTioEJpUYJccxPHu92rtfTTPpYs6WPt85+z1rf2t79snJVKZvEhVLRKRam6LzOB4ZPrH/kEvIbxzT7V2RaK8OvJ85kZewAfw0D0v4IBVofuGIDbVBL5HqpAQkIfPQd94BH3tAdTV+9BXeqEIzVjxm9+TjRchyqpLC7AsYjcJjHc2QmaaiVOMj0GU+33uBc4ynwJcEgLE5n1QF3pgP32G/bUAR9jpL+F0se0gOasKpCEPtcD9zIdE/WQA+vFAiF1+AfJoa+Cs8EtYkPtz0A9fhypEZQNk+iTs1CycVOCUyPE2EgJcii1sPQB1/Dr08xGYiSnY2Tm4qABXkFCn1xSogmq6GZf8fR6mbxDqci/s5Mw6K9i4l577OW3O+84ziA1sWGU97LvpdQqU7YG++zII2ImPUOe7YV6Nwv2JYoFc5xoCvonpEzBvJuHmf8N++xEEzNNh2JmvUJfuFV0ij/8Ewgnbj0DWZCF3NUFsqQ2NFTsaICrqYltJgaKrzFuncregsh3seHuMM4w9soxpQdaeDVZLCvjGOWOC35IwNjR5+WdibrEF1XIbZuwDzNv37APhn8l4nI3lWP204pwM/gKsE7aS2MFTsgAAAABJRU5ErkJggg==" InformativeScreenshot="b55b2c182e39d58ad7fcf2dcc80ae8d3.jpg" Selector="&lt;html app='chrome.exe' title='Americanas*' /&gt;" Url="https://www.americanas.com.br/" />
-            </uix:NApplicationCard.TargetApp>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Americanas - tudo, a toda hora, em qualquer lugar :)" sap:VirtualizedContainerService.HintSize="630,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="400,507" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_Extracao" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </uix:NApplicationCard>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Campo de busca" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Text="eletronicos" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.americanas.com.br/" DesignTimeRectangle="541, 209, 575, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='search__*' aaname='' /&gt;" Guid="19c8a564-3f98-48f6-8117-413c6ee5871a" ImageBase64="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" InformativeScreenshot="18ce961e3b76563cecf6d4d9120e2373.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Americanas - tudo, a toda hora, em qualquer lugar :)' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click - Procura" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4eaa9361-afe9-42ad-9965-251fbfad5f2c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.americanas.com.br/" DesignTimeRectangle="1116, 218, 21, 21" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-labelledby='searchIcon searchDesc' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='searchIcon searchDesc' tag='svg' type='' class='search__*' aaname='' /&gt;" Guid="e5317716-a0e9-41e9-a167-22038fe2d9a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVEhLxZQ9TgMxEEZzA7gB3ADEAQg9SLRQQZMaxAHIAUCCkg4aaJHgAOEASLR0VNRIVOxfBn/GnrXXO7YRq/CkVbSbsZ89M/aIFsD/S+qLW6oOp1RuTehrtEHF+r5+ry/viD4+TVSaXsn85VVPiImlp1jdoWb2bEbECST19UM72dImVdMrau5nekL84r1Y2eYYvKfwJNiBHVzunsgpUd+rozOOhTyGJynW9lpBBixaHkdrxBIUWQ9QKcouqoqzqYuljSXVwWkyuA+7uHI8MV9CWIIgBKfy2wUNoTOAlAmwRAdCktmWLnaslGaW2KL/diduR0r8vSbmXGGREiyxBcRJzu4uhc0AFinBEq8dVf/ngF0jHm0/f3s3X0NaiYI7BaLj8+iOWJCxKE8C3OsCqcON2zz9dByKXN88hpenal/8JxFIADoMKfAm6j7m8rQ1iYl6JRqVKuxKH1JHiElRZK4BapkQyZIusY5LiPIlKSKi4STAEenzZhhWAozIvZWHl/SwAAnRN5WR5My9hBGdAAAAAElFTkSuQmCC" InformativeScreenshot="440e43bebd538064e4f8a52f549371f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Americanas - tudo, a toda hora, em qualquer lugar :)' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVDhPjVNLS1VRGL1pEUUDB0H2I6LrzSyLkkLzD4RUdruBgVQQ9B74iCA1AnuMCnvRoJFPcFbqMCsnKTioEJpUYJccxPHu92rtfTTPpYs6WPt85+z1rf2t79snJVKZvEhVLRKRam6LzOB4ZPrH/kEvIbxzT7V2RaK8OvJ85kZewAfw0D0v4IBVofuGIDbVBL5HqpAQkIfPQd94BH3tAdTV+9BXeqEIzVjxm9+TjRchyqpLC7AsYjcJjHc2QmaaiVOMj0GU+33uBc4ynwJcEgLE5n1QF3pgP32G/bUAR9jpL+F0se0gOasKpCEPtcD9zIdE/WQA+vFAiF1+AfJoa+Cs8EtYkPtz0A9fhypEZQNk+iTs1CycVOCUyPE2EgJcii1sPQB1/Dr08xGYiSnY2Tm4qABXkFCn1xSogmq6GZf8fR6mbxDqci/s5Mw6K9i4l577OW3O+84ziA1sWGU97LvpdQqU7YG++zII2ImPUOe7YV6Nwv2JYoFc5xoCvonpEzBvJuHmf8N++xEEzNNh2JmvUJfuFV0ij/8Ewgnbj0DWZCF3NUFsqQ2NFTsaICrqYltJgaKrzFuncregsh3seHuMM4w9soxpQdaeDVZLCvjGOWOC35IwNjR5+WdibrEF1XIbZuwDzNv37APhn8l4nI3lWP204pwM/gKsE7aS2MFTsgAAAABJRU5ErkJggg==" InformativeScreenshot="b55b2c182e39d58ad7fcf2dcc80ae8d3.jpg" Selector="&lt;html app='chrome.exe' title='Americanas*' /&gt;" Url="https://www.americanas.com.br/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Eletronicos: Promoções e Ofertas na Americanas" sap:VirtualizedContainerService.HintSize="630,1951" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="3825a6eb-4591-472f-a101-69baaf0f3261" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
