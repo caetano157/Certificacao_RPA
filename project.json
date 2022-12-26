@@ -48,7 +48,13 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "0407ffda-15a2-45fb-87bf-f41da332e959",
+      "uniqueId": "8f2082be-5190-4dec-882a-ca48da9e5fdb",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "sq_Extrair_Tabela.xaml",
+      "uniqueId": "b336ec84-0eb8-4b19-b768-94a835923211",
       "input": [],
       "output": []
     }
